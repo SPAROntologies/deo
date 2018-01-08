@@ -23,6 +23,35 @@
     ]
   },
   {
+    "@id": "http://purl.org/spar/deo/Conclusion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "conclusion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Conclusion"
+      },
+      {
+        "@id": "http://purl.org/orb/1.0/Conclusion"
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/deo/ProblemStatement",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -161,7 +190,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:N446ddc1252d04ce09bb06b54a8a9c7a4"
+        "@id": "_:N6a20fb87996c4dd2ae06db1544ca0293"
       }
     ]
   },
@@ -233,36 +262,18 @@
     ]
   },
   {
-    "@id": "_:N446ddc1252d04ce09bb06b54a8a9c7a4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/deo/DiscourseElement"
-          },
-          {
-            "@id": "_:N15f037c33a684c39a3834dd4a3b74ec4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/deo/Conclusion",
+    "@id": "http://purl.org/spar/deo/Discussion",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section."
+        "@value": "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "conclusion"
+        "@value": "discussion"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -272,11 +283,17 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Conclusion"
+        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Discussion"
       },
       {
-        "@id": "http://purl.org/orb/1.0/Conclusion"
+        "@id": "http://purl.org/orb/1.0/Discussion"
       }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -338,12 +355,6 @@
     ]
   },
   {
-    "@id": "http://purl.org/orb/1.0/Results",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
     "@id": "http://salt.semanticauthoring.org/ontologies/sro#Evaluation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -356,10 +367,10 @@
     ],
     "http://purl.org/dc/elements/1.1/creator": [
       {
-        "@value": "Silvio Peroni"
+        "@value": "David Shotton"
       },
       {
-        "@value": "David Shotton"
+        "@value": "Silvio Peroni"
       }
     ],
     "http://purl.org/dc/elements/1.1/date": [
@@ -388,7 +399,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The Discourse Elements Ontology is an ontology for describing the major rhetorical elements of a document such as a journal article.  It is a subsidiary ontology that is imported into the Document Components Ontology, itself part of SPAR, the Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.\n"
+        "@value": "The Discourse Elements Ontology (DEO) is an ontology that provides a structured vocabulary for rhetorical elements within documents (e.g., Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix).\n\n**URL:** http://purl.org/spar/deo\n\n**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/deo\n\n**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177"
       }
     ],
     "http://www.w3.org/2002/07/owl#priorVersion": [
@@ -408,28 +419,25 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/deo/Contribution",
+    "@id": "http://purl.org/spar/deo/RelatedWork",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A description of the part that this publication plays in the overall field."
+        "@language": "en",
+        "@value": "The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "contribution"
+        "@language": "en",
+        "@value": "related work"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/spar/deo/DiscourseElement"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Contribution"
       }
     ]
   },
@@ -515,31 +523,31 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/deo/Discussion",
+    "@id": "http://purl.org/orb/1.0/Acknowledgments",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/deo/Data",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document."
+        "@language": "en",
+        "@value": "A textual description of data used or produced in the work which the document describes, or the data themselves."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "discussion"
+        "@language": "en",
+        "@value": "data"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/spar/deo/DiscourseElement"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Discussion"
-      },
-      {
-        "@id": "http://purl.org/orb/1.0/Discussion"
       }
     ]
   },
@@ -567,7 +575,7 @@
     ]
   },
   {
-    "@id": "http://purl.org/orb/1.0/Acknowledgments",
+    "@id": "http://purl.org/orb/1.0/Results",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ]
@@ -611,25 +619,28 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/deo/RelatedWork",
+    "@id": "http://purl.org/spar/deo/Motivation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@language": "en",
-        "@value": "The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section."
+        "@value": "A description of the justification for undertaking the work described in the publication."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "en",
-        "@value": "related work"
+        "@value": "motivation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://purl.org/spar/deo/DiscourseElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Motivation"
       }
     ]
   },
@@ -657,9 +668,29 @@
     ]
   },
   {
-    "@id": "http://purl.org/orb/1.0/Methods",
+    "@id": "http://purl.org/spar/deo/Contribution",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A description of the part that this publication plays in the overall field."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Contribution"
+      }
     ]
   },
   {
@@ -671,8 +702,8 @@
   {
     "@id": "http://purl.org/dc/terms/relation",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+      "http://www.w3.org/2002/07/owl#SymmetricProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -777,28 +808,20 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/deo/Motivation",
+    "@id": "_:N6a20fb87996c4dd2ae06db1544ca0293",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
       {
-        "@value": "A description of the justification for undertaking the work described in the publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "motivation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://purl.org/spar/deo/DiscourseElement"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "http://salt.semanticauthoring.org/ontologies/sro#Motivation"
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "_:Nab01e6b9ead84c71838c5c57b5256f53"
+          }
+        ]
       }
     ]
   },
@@ -877,16 +900,10 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
     "@id": "http://purl.org/dc/terms/hasPart",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -942,8 +959,8 @@
   {
     "@id": "http://purl.org/dc/terms/isPartOf",
     "@type": [
-      "http://www.w3.org/2002/07/owl#TransitiveProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
@@ -964,25 +981,28 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/deo/Data",
+    "@id": "http://purl.org/spar/deo/BibliographicReference",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A textual description of data used or produced in the work which the document describes, or the data themselves."
+        "@value": "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "data"
+        "@value": "bibliographic reference"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/deo/DiscourseElement"
+        "@id": "http://purl.org/spar/deo/Reference"
+      },
+      {
+        "@id": "http://purl.org/orb/1.0/References"
       }
     ]
   },
@@ -1022,7 +1042,7 @@
     ]
   },
   {
-    "@id": "_:N15f037c33a684c39a3834dd4a3b74ec4",
+    "@id": "_:Nab01e6b9ead84c71838c5c57b5256f53",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1044,29 +1064,9 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/deo/BibliographicReference",
+    "@id": "http://purl.org/orb/1.0/Methods",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "bibliographic reference"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://purl.org/orb/1.0/References"
-      },
-      {
-        "@id": "http://purl.org/spar/deo/Reference"
-      }
     ]
   }
 ]
