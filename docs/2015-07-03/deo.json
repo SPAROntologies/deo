@@ -399,7 +399,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The Discourse Elements Ontology (DEO) is an ontology that provides a structured vocabulary for rhetorical elements within documents (e.g., Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix).\n\n**URL:** http://purl.org/spar/deo\n\n**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/deo\n\n**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177"
+        "@value": "The Discourse Elements Ontology (DEO) is an ontology that provides a structured vocabulary for rhetorical elements within documents (e.g., Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix).\n\n**URL:** http://purl.org/spar/deo\n\n**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/deo\n\n**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: https://doi.org/10.3233/SW-150177"
       }
     ],
     "http://www.w3.org/2002/07/owl#priorVersion": [

@@ -45,7 +45,7 @@
 
 **Website:** http://www.sparontologies.net/ontologies/deo
 
-**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177</rdfs:comment>
+**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: https://doi.org/10.3233/SW-150177</rdfs:comment>
         <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
     </owl:Ontology>
     

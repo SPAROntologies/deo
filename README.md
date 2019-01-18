@@ -10,4 +10,4 @@ The Discourse Elements Ontology (DEO) is an ontology that provides a structured 
 
 **Website:** http://www.sparontologies.net/ontologies/deo
 
-**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177
+**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: https://doi.org/10.3233/SW-150177
