@@ -39,7 +39,7 @@ orb:Acknowledgments a owl:Class .
 
 **Website:** http://www.sparontologies.net/ontologies/deo
 
-**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177"""@en ;
+**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: https://doi.org/10.3233/SW-150177"""@en ;
     owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/DEO/2011-05-05-deo-1_0.owl> ;
     owl:versionIRI <http://purl.org/spar/pso/2015-07-03> ;
     owl:versionInfo "1.1"^^xsd:string .
