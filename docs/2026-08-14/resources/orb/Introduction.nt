@@ -1,0 +1,4 @@
+<http://purl.org/orb/1.0/Introduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/orb/1.0/Introduction> <http://www.w3.org/2000/01/rdf-schema#label> "introduction"@en .
+<http://purl.org/orb/1.0/Introduction> <http://www.w3.org/2000/01/rdf-schema#comment> "An introduction explaining the general scope and purpose of the study illustrated in the publication."@en .
+<http://purl.org/orb/1.0/Introduction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/orb/1.0/> .

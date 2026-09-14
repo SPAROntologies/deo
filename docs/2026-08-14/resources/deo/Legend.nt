@@ -1,0 +1,7 @@
+<http://purl.org/spar/deo/Legend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/deo/Legend> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/Caption> .
+<http://purl.org/spar/deo/Legend> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-legend .\n\n    :my-legend a deo:Legend .\n    " .
+<http://purl.org/spar/deo/Legend> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
+<http://purl.org/spar/deo/Legend> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/deo/Legend> <http://www.w3.org/2000/01/rdf-schema#comment> "Informative text that explicitly explains another item, such as a figure or a table."@en .
+<http://purl.org/spar/deo/Legend> <http://www.w3.org/2000/01/rdf-schema#label> "legend"@en .

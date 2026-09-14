@@ -1,0 +1,7 @@
+<http://purl.org/spar/deo/RelatedWork> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-related-work .\n\n    :my-related-work a deo:RelatedWork .\n    " .
+<http://purl.org/spar/deo/RelatedWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/deo/RelatedWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/deo/RelatedWork> <http://www.w3.org/2000/01/rdf-schema#label> "related work"@en .
+<http://purl.org/spar/deo/RelatedWork> <http://www.w3.org/2000/01/rdf-schema#comment> "The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section."@en .
+<http://purl.org/spar/deo/RelatedWork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
+<http://purl.org/spar/deo/RelatedWork> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

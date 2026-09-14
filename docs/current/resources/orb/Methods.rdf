@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.org/orb/1.0/Methods">
+    <rdfs:label xml:lang="en">methods</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
+    <rdfs:comment xml:lang="en">A description of the methods used to carry out the study illustrated in the publication.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

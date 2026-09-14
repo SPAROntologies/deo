@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Contribution">
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-contribution .
+
+    :my-contribution a deo:Contribution .
+    </vann:example>
+    <rdfs:label>contribution</rdfs:label>
+    <rdfs:comment>A description of the part that this publication plays in the overall field.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
+  </rdf:Description>
+</rdf:RDF>
