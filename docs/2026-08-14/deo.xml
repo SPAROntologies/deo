@@ -120,6 +120,23 @@
     <rdfs:comment xml:lang="en">Conclusive overview of the publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/ExternalResourceDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">external resource description</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-external-resource-description .
+
+    :my-external-resource-description a deo:ExternalResourceDescription ;
+        dcterms:hasPart :my-reference .
+
+    :my-reference a deo:Reference .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Information describing an external resource and including a reference to that resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/Background">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>background</rdfs:label>
@@ -198,23 +215,6 @@
     <rdfs:comment xml:lang="en">The reason motivating the research presented in the paper.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/ExternalResourceDescription">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">external resource description</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-external-resource-description .
-
-    :my-external-resource-description a deo:ExternalResourceDescription ;
-        dcterms:hasPart :my-reference .
-
-    :my-reference a deo:Reference .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Information describing an external resource and including a reference to that resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b1"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/SupplementaryInformationDescription">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">supplementary information description</rdfs:label>
@@ -237,7 +237,7 @@
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</dc:creator>
     <dc:date>2026-08-14</dc:date>
     <dc:description xml:lang="en">
-The **_Discourse Elements Ontology (DEO)_** is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix), enabling these to be described in RDF.
+The **_Discourse Elements Ontology (DEO)_** is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements), enabling these to be described in RDF.
 The main class of this ontology is `deo:DiscourseElement`, which describes all those elements of a document that carry out a rhetorical function. 
 All the remaining rhetorical behaviours are modelled as subclasses of this class. 
 
@@ -555,6 +555,10 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/AuthorContribution">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">author contribution</rdfs:label>
@@ -583,10 +587,6 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Methods"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/Prologue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -654,11 +654,6 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:label xml:lang="en">discussion</rdfs:label>
     <rdfs:comment xml:lang="en">Interesting issues discovered while researching the publication's topic.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/orb/1.0/Conclusion">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -731,6 +726,14 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:comment xml:lang="en">An introduction explaining the general scope and purpose of the study illustrated in the publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4">
+    <rdf:first rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3">
+    <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdf:rest rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Scenario">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">scenario</rdfs:label>
@@ -756,6 +759,11 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:comment xml:lang="en">A description of the results obtained after carrying out the study illustrated in the publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
@@ -770,14 +778,6 @@ What is the future work outlined in the conclusion of a document?
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b3">
-    <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <rdf:rest rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b4"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b4">
-    <rdf:first rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b2"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>

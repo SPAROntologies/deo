@@ -6,14 +6,13 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b2">
-    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1">
+    <owl:intersectionOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/ExternalResourceDescription">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b1"/>
+    <rdfs:subClassOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1"/>
     <vann:example>
     :my-paper 
         dcterms:hasPart :my-external-resource-description .
@@ -28,16 +27,17 @@
     <rdfs:comment xml:lang="en">Information describing an external resource and including a reference to that resource.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b4">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b2"/>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2">
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b1">
-    <owl:intersectionOf rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b3">
-    <rdf:rest rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b4"/>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3">
     <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdf:rest rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2"/>
   </rdf:Description>
 </rdf:RDF>
