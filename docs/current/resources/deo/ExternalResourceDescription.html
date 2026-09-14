@@ -1,7 +1,7 @@
 <!doctype html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><title>LODE 2.0 - Semantic Artefact Viewer</title><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet><link href=../../static/style.css rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css rel=stylesheet><body><div class="container-fluid px-4 py-4"><details class=metadata-accordion><summary class=metadata-accordion-summary><div class=resource-frontmatter><h1 class=resource-title>external resource description</h1><div class=resource-meta-line><span class="resource-meta-uri font-monospace text-truncate">http://purl.org/spar/deo/ExternalResourceDescription</span><a title="Go to Resource" class=resource-meta-link href=http://purl.org/spar/deo/ExternalResourceDescription target=_blank> <i class="bi bi-box-arrow-up-right"></i> </a></div><p class=resource-subtitle>as defined in <span class=resource-subtitle-ontology> The Discourse Elements Ontology (DEO) </span> <button title="Show/hide ontology metadata" class=metadata-accordion-toggle onclick=toggleMetadataAccordion(event) type=button><i class="bi bi-chevron-down"></i></button></div></summary> <div class=p-3><section class=metadata-block><dl class="row mb-0 lead fs-6"><dt class="text-capitalize fs-7 fw-bold">bibliographic citation<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web – Interoperability, Usability, Applicability, 7 (2): 167-181. Amsterdam, The Netherlands: IOS Press. https://doi.org/10.3233/SW-150177</div></div></div><dt class="text-capitalize fs-7 fw-bold">changes<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">
 * **v1.2.0**: Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
     </div></div></div><dt class="text-capitalize fs-7 fw-bold">code repository<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/deo target=_blank>https://github.com/SPAROntologies/deo</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">contributor<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</div></div></div><dt class="text-capitalize fs-7 fw-bold">created<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2011-05-05</div></div></div><dt class="text-capitalize fs-7 fw-bold">creator<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">David Shotton (https://orcid.org/0000-0001-5506-523X)</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</div></div></div><dt class="text-capitalize fs-7 fw-bold">date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-08-14</div></div></div><dt class="text-capitalize fs-7 fw-bold">description<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">
-The **_Discourse Elements Ontology (DEO)_** is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix), enabling these to be described in RDF.
+The **_Discourse Elements Ontology (DEO)_** is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements), enabling these to be described in RDF.
 The main class of this ontology is `deo:DiscourseElement`, which describes all those elements of a document that carry out a rhetorical function. 
 All the remaining rhetorical behaviours are modelled as subclasses of this class. 
 
@@ -192,14 +192,13 @@ deo:ExternalResourceDescription a owl:Class ;
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  &lt;rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b2">
-    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    &lt;owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
-    &lt;owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
+  &lt;rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1">
+    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    &lt;owl:intersectionOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3"/>
   &lt;/rdf:Description>
   &lt;rdf:Description rdf:about="http://purl.org/spar/deo/ExternalResourceDescription">
     &lt;rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    &lt;rdfs:subClassOf rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b1"/>
+    &lt;rdfs:subClassOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1"/>
     &lt;rdfs:label xml:lang="en">external resource description&lt;/rdfs:label>
     &lt;rdfs:comment xml:lang="en">Information describing an external resource and including a reference to that resource.&lt;/rdfs:comment>
     &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -214,17 +213,18 @@ deo:ExternalResourceDescription a owl:Class ;
     &lt;/vann:example>
     &lt;vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   &lt;/rdf:Description>
-  &lt;rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b4">
-    &lt;rdf:first rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b2"/>
-    &lt;rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  &lt;rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2">
+    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    &lt;owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    &lt;owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
   &lt;/rdf:Description>
-  &lt;rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b1">
-    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    &lt;owl:intersectionOf rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b3"/>
-  &lt;/rdf:Description>
-  &lt;rdf:Description rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b3">
+  &lt;rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3">
     &lt;rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    &lt;rdf:rest rdf:nodeID="n4acf9ee0ab3548c8a322f6147bc961a1b4"/>
+    &lt;rdf:rest rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4"/>
+  &lt;/rdf:Description>
+  &lt;rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4">
+    &lt;rdf:first rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2"/>
+    &lt;rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   &lt;/rdf:Description>
 &lt;/rdf:RDF>
 </code></pre></div><div class="tab-pane fade" id=id_d3f6ccb9cf7c8600303b14a5decc4d73_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>[
@@ -257,7 +257,7 @@ deo:ExternalResourceDescription a owl:Class ;
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b1"
+        "@id": "_:nd63331d1999b4651956e0cb1b7cadf7fb1"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -267,7 +267,7 @@ deo:ExternalResourceDescription a owl:Class ;
     ]
   },
   {
-    "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b1",
+    "@id": "_:nd63331d1999b4651956e0cb1b7cadf7fb1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -278,14 +278,14 @@ deo:ExternalResourceDescription a owl:Class ;
             "@id": "http://purl.org/spar/deo/DiscourseElement"
           },
           {
-            "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b2"
+            "@id": "_:nd63331d1999b4651956e0cb1b7cadf7fb2"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b2",
+    "@id": "_:nd63331d1999b4651956e0cb1b7cadf7fb2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -300,22 +300,22 @@ deo:ExternalResourceDescription a owl:Class ;
       }
     ]
   }
-]</code></pre></div><div class="tab-pane fade" id=id_d3f6ccb9cf7c8600303b14a5decc4d73_Concept_prov_4 role=tabpanel><pre class="mb-0 small"><code>_:n4acf9ee0ab3548c8a322f6147bc961a1b2 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> .
+]</code></pre></div><div class="tab-pane fade" id=id_d3f6ccb9cf7c8600303b14a5decc4d73_Concept_prov_4 role=tabpanel><pre class="mb-0 small"><code>_:nd63331d1999b4651956e0cb1b7cadf7fb1 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:nd63331d1999b4651956e0cb1b7cadf7fb3 .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/deo/> .
-&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4acf9ee0ab3548c8a322f6147bc961a1b1 .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb2 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> .
+&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nd63331d1999b4651956e0cb1b7cadf7fb1 .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-external-resource-description .\n\n    :my-external-resource-description a deo:ExternalResourceDescription ;\n        dcterms:hasPart :my-reference .\n\n    :my-reference a deo:Reference .\n    " .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b1 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4acf9ee0ab3548c8a322f6147bc961a1b3 .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b2 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/deo/Reference> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/deo/DiscourseElement> .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4acf9ee0ab3548c8a322f6147bc961a1b4 .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4acf9ee0ab3548c8a322f6147bc961a1b2 .
+_:nd63331d1999b4651956e0cb1b7cadf7fb1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nd63331d1999b4651956e0cb1b7cadf7fb4 .
+_:nd63331d1999b4651956e0cb1b7cadf7fb2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nd63331d1999b4651956e0cb1b7cadf7fb2 .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#label> "external resource description"@en .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/deo/DiscourseElement> .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Information describing an external resource and including a reference to that resource."@en .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb2 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/deo/Reference> .
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 
                 // Security hooks

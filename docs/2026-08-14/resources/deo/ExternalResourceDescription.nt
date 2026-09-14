@@ -1,16 +1,16 @@
-_:n4acf9ee0ab3548c8a322f6147bc961a1b2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/hasPart> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb1 <http://www.w3.org/2002/07/owl#intersectionOf> _:nd63331d1999b4651956e0cb1b7cadf7fb3 .
 <http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
-<http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4acf9ee0ab3548c8a322f6147bc961a1b1 .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/hasPart> .
+<http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nd63331d1999b4651956e0cb1b7cadf7fb1 .
 <http://purl.org/spar/deo/ExternalResourceDescription> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-external-resource-description .\n\n    :my-external-resource-description a deo:ExternalResourceDescription ;\n        dcterms:hasPart :my-reference .\n\n    :my-reference a deo:Reference .\n    " .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4acf9ee0ab3548c8a322f6147bc961a1b3 .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/deo/Reference> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/deo/DiscourseElement> .
 <http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4acf9ee0ab3548c8a322f6147bc961a1b4 .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4acf9ee0ab3548c8a322f6147bc961a1b2 .
+_:nd63331d1999b4651956e0cb1b7cadf7fb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nd63331d1999b4651956e0cb1b7cadf7fb4 .
+_:nd63331d1999b4651956e0cb1b7cadf7fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nd63331d1999b4651956e0cb1b7cadf7fb2 .
 <http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/2000/01/rdf-schema#label> "external resource description"@en .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/deo/DiscourseElement> .
 <http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Information describing an external resource and including a reference to that resource."@en .
 <http://purl.org/spar/deo/ExternalResourceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n4acf9ee0ab3548c8a322f6147bc961a1b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nd63331d1999b4651956e0cb1b7cadf7fb2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/deo/Reference> .
