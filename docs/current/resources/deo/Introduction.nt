@@ -1,0 +1,8 @@
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/2000/01/rdf-schema#comment> "An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area."@en .
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/orb/1.0/Introduction> .
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/deo/Introduction> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-introduction .\n\n    :my-introduction a deo:Introduction .\n    " .
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
+<http://purl.org/spar/deo/Introduction> <http://www.w3.org/2000/01/rdf-schema#label> "introduction"@en .

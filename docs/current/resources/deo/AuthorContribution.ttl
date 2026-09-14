@@ -1,0 +1,20 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:AuthorContribution a owl:Class ;
+    rdfs:label "author contribution"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-author-contribution .
+
+    :my-author-contribution a deo:AuthorContribution .
+    """ ;
+    rdfs:comment "A description of the roles played by an author in the publication."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+

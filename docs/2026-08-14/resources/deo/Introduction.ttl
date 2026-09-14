@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix orb: <http://purl.org/orb/1.0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:Introduction a owl:Class ;
+    rdfs:label "introduction"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-introduction .
+
+    :my-introduction a deo:Introduction .
+    """ ;
+    rdfs:comment "An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    owl:equivalentClass orb:Introduction ;
+    vs:term_status reg:statusStable .
+

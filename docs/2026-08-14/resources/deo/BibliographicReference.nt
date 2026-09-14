@@ -1,0 +1,8 @@
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."@en .
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference"@en .
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/orb/1.0/References> .
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/deo/BibliographicReference> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-bibliographic-reference .\n\n    :my-bibliographic-reference a deo:BibliographicReference .\n    " .
+<http://purl.org/spar/deo/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/Reference> .

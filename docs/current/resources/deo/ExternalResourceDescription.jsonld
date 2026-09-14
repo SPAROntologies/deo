@@ -1,0 +1,74 @@
+[
+  {
+    "@id": "http://purl.org/spar/deo/ExternalResourceDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-paper \n        dcterms:hasPart :my-external-resource-description .\n\n    :my-external-resource-description a deo:ExternalResourceDescription ;\n        dcterms:hasPart :my-reference .\n\n    :my-reference a deo:Reference .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Information describing an external resource and including a reference to that resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/deo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "external resource description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b1"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4acf9ee0ab3548c8a322f6147bc961a1b2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/hasPart"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/deo/Reference"
+      }
+    ]
+  }
+]

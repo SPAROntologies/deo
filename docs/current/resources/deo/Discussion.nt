@@ -1,0 +1,8 @@
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/deo/Discussion> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-discussion .\n\n    :my-discussion a deo:Discussion .\n    " .
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/2000/01/rdf-schema#comment> "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document." .
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/orb/1.0/Discussion> .
+<http://purl.org/spar/deo/Discussion> <http://www.w3.org/2000/01/rdf-schema#label> "discussion" .

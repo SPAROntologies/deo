@@ -1,0 +1,7 @@
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/2000/01/rdf-schema#label> "discourse element"@en .
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/2000/01/rdf-schema#comment> "An element of a document that carries out a rhetorical function."@en .
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/deo/> .
+<http://purl.org/spar/deo/DiscourseElement> <http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-discourse-element .\n\n    :my-discourse-element a deo:DiscourseElement .\n    " .

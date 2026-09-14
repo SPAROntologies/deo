@@ -1,0 +1,4 @@
+<http://salt.semanticauthoring.org/ontologies/sro#Conclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://salt.semanticauthoring.org/ontologies/sro#Conclusion> <http://www.w3.org/2000/01/rdf-schema#label> "conclusion"@en .
+<http://salt.semanticauthoring.org/ontologies/sro#Conclusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Conclusive overview of the publication."@en .
+<http://salt.semanticauthoring.org/ontologies/sro#Conclusion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://salt.semanticauthoring.org/ontologies/sro#> .

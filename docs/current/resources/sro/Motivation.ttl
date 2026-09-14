@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+
+sro:Motivation a owl:Class ;
+    rdfs:label "motivation"@en ;
+    rdfs:comment "The reason motivating the research presented in the paper."@en ;
+    rdfs:isDefinedBy sro: .
+

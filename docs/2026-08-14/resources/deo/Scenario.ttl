@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:Scenario a owl:Class ;
+    rdfs:label "scenario" ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-scenario .
+
+    :my-scenario a deo:Scenario .
+    """ ;
+    rdfs:comment "A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system." ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    owl:equivalentClass sro:Scenario ;
+    vs:term_status reg:statusStable .
+
