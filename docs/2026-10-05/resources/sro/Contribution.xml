@@ -5,8 +5,8 @@
 >
   <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Contribution">
     <rdfs:comment xml:lang="en">The solution proposed by the publication.</rdfs:comment>
-    <rdfs:label xml:lang="en">contribution</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">contribution</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
   </rdf:Description>
 </rdf:RDF>

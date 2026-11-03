@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Motivation">
-    <rdfs:label xml:lang="en">motivation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
     <rdfs:comment xml:lang="en">The reason motivating the research presented in the paper.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+    <rdfs:label xml:lang="en">motivation</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/orb/1.0/Methods">
+    <rdfs:label xml:lang="en">methods</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">A description of the methods used to carry out the study illustrated in the publication.</rdfs:comment>
-    <rdfs:label xml:lang="en">methods</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
   </rdf:Description>
 </rdf:RDF>
