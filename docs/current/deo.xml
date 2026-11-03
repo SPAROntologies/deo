@@ -11,19 +11,19 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Scenario">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Background">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>scenario</rdfs:label>
+    <rdfs:label>background</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-scenario .
+        dcterms:hasPart :my-background .
 
-    :my-scenario a deo:Scenario .
+    :my-background a deo:Background .
     </vann:example>
-    <rdfs:comment>A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system.</rdfs:comment>
+    <rdfs:comment>Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Scenario"/>
+    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/Conclusion">
@@ -41,193 +41,12 @@
     <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Conclusion"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/RelatedWork">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">related work</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-related-work .
-
-    :my-related-work a deo:RelatedWork .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Contribution">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>contribution</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-contribution .
-
-    :my-contribution a deo:Contribution .
-    </vann:example>
-    <rdfs:comment>A description of the part that this publication plays in the overall field.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Data">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">data</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-data .
-
-    :my-data a deo:Data .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A textual description of data used or produced in the work which the document describes, or the data themselves.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Motivation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>motivation</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-motivation .
-
-    :my-motivation a deo:Motivation .
-    </vann:example>
-    <rdfs:comment>A description of the justification for undertaking the work described in the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Results">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">results</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-results .
-
-    :my-results a deo:Results .
-    </vann:example>
-    <rdfs:comment xml:lang="en">The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Results"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Conclusion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">conclusion</rdfs:label>
-    <rdfs:comment xml:lang="en">Conclusive overview of the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/ExternalResourceDescription">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">external resource description</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-external-resource-description .
-
-    :my-external-resource-description a deo:ExternalResourceDescription ;
-        dcterms:hasPart :my-reference .
-
-    :my-reference a deo:Reference .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Information describing an external resource and including a reference to that resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Background">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>background</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-background .
-
-    :my-background a deo:Background .
-    </vann:example>
-    <rdfs:comment>Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Introduction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">introduction</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-introduction .
-
-    :my-introduction a deo:Introduction .
-    </vann:example>
-    <rdfs:comment xml:lang="en">An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Introduction"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/ProblemStatement">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">problem statement</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-problem-statement .
-
-    :my-problem-statement a deo:ProblemStatement .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A concise description of the issues that needed to be addressed by a work described in the document.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Postscript">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">postscript</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-postscript .
-
-    :my-postscript a deo:Postscript .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Text added after the signature of a letter, or sometimes after the main body of an essay or book.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Acknowledgements">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">acknowledgements</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-acknowledgements .
-
-    :my-acknowledgements a deo:Acknowledgements .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Motivation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">motivation</rdfs:label>
-    <rdfs:comment xml:lang="en">The reason motivating the research presented in the paper.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/SupplementaryInformationDescription">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">supplementary information description</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-supplementary-information-description .
-
-    :my-supplementary-information-description a deo:SupplementaryInformationDescription .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Information describing supplementary information relating to the document, including references or links to the relevant supplementary information.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/ExternalResourceDescription"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="en">has relation</rdfs:label>
+    <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -235,7 +54,7 @@
     <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Shotton (https://orcid.org/0000-0001-5506-523X)</dc:creator>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</dc:creator>
-    <dc:date>2026-08-14</dc:date>
+    <dc:date>2026-10-05</dc:date>
     <dc:description xml:lang="en">
 The **_Discourse Elements Ontology (DEO)_** is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements), enabling these to be described in RDF.
 The main class of this ontology is `deo:DiscourseElement`, which describes all those elements of a document that carry out a rhetorical function. 
@@ -375,25 +194,26 @@ What is the future work outlined in the conclusion of a document?
     <dcterms:created>2011-05-05</dcterms:created>
     <dcterms:issued>2015-07-03</dcterms:issued>
     <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:modified>2026-08-14</dcterms:modified>
+    <dcterms:modified>2026-10-05</dcterms:modified>
     <dcterms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
     <dcterms:source rdf:resource="https://github.com/SPAROntologies/deo/blob/master/docs/cq.md"/>
     <bibo:doi>https://doi.org/10.25504/FAIRsharing.39fd58</bibo:doi>
     <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
-    <vann:changes xml:lang="en">
-* **v1.2.0**: Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-    </vann:changes>
+    <vann:changes rdf:resource="https://github.com/SPAROntologies/deo/blob/master/CHANGELOG.md"/>
     <vann:preferredNamespacePrefix xml:lang="en">deo</vann:preferredNamespacePrefix>
     <vann:preferredNamespaceUri xml:lang="en">http://purl.org/spar/deo</vann:preferredNamespaceUri>
     <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/deo"/>
-    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/deo/2015-07-03"/>
-    <owl:priorVersion rdf:resource="http://purl.org/spar/deo/2015-07-03"/>
-    <owl:versionIRI rdf:resource="http://purl.org/spar/deo/2026-08-14"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.0</owl:versionInfo>
-    <foaf:logo rdf:resource="https://github.com/SPAROntologies/deo/blob/master/spar.png"/>
+    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/deo/2026-08-14"/>
+    <owl:priorVersion rdf:resource="http://purl.org/spar/deo/2026-08-14"/>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/deo/2026-10-05"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.1</owl:versionInfo>
+    <foaf:logo rdf:resource="https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png"/>
     <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/deo"/>
     <schema:image rdf:resource="https://github.com/SPAROntologies/deo/blob/master/docs/current/deo.png"/>
     <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
+    <dc:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+    <schema:keywords xml:lang="en">SPAR Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">Semantic Publishing and Referencing Ontologies</schema:keywords>
     <schema:keywords xml:lang="en">bibliometrics</schema:keywords>
     <schema:keywords xml:lang="en">rethorical elements</schema:keywords>
     <schema:keywords xml:lang="en">scholarly publishing</schema:keywords>
@@ -414,33 +234,73 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Dedication">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Model">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">dedication</rdfs:label>
+    <rdfs:label xml:lang="en">model</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-dedication .
+        dcterms:hasPart :my-model .
 
-    :my-dedication a deo:Dedication .
+    :my-model a deo:Model .
     </vann:example>
-    <rdfs:comment xml:lang="en">Text in which the author names the person or people for whom he/she has written the document, or to whose memory it is dedicated.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A description of a model used or produced by the work described in the publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Legend">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Motivation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">legend</rdfs:label>
+    <rdfs:label>motivation</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-legend .
+        dcterms:hasPart :my-motivation .
 
-    :my-legend a deo:Legend .
+    :my-motivation a deo:Motivation .
     </vann:example>
-    <rdfs:comment xml:lang="en">Informative text that explicitly explains another item, such as a figure or a table.</rdfs:comment>
+    <rdfs:comment>A description of the justification for undertaking the work described in the publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/Caption"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/orb/1.0/Results">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">results</rdfs:label>
+    <rdfs:comment xml:lang="en">A description of the results obtained after carrying out the study illustrated in the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Evaluation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">evaluation</rdfs:label>
+    <rdfs:comment xml:lang="en">The evaluation methodology and its associated results.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Introduction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">introduction</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-introduction .
+
+    :my-introduction a deo:Introduction .
+    </vann:example>
+    <rdfs:comment xml:lang="en">An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Introduction"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Discussion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">discussion</rdfs:label>
+    <rdfs:comment xml:lang="en">Interesting issues discovered while researching the publication's topic.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/orb/1.0/References">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">references</rdfs:label>
+    <rdfs:comment xml:lang="en">A list of references used as sources for the study illustrated in the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/Biography">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -456,150 +316,68 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Reference">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">reference</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-reference .
-
-    :my-reference a deo:Reference .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A reference to a specific part of the document, or to another publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Caption">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">caption</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-caption .
-
-    :my-caption a deo:Caption .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Text accompanying another item, such as a picture.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/DatasetDescription">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">dataset description</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-dataset-description .
-
-    :my-dataset-description a deo:DatasetDescription .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Information describing a dataset held in an external database or repository and including a reference to it, such as a database ID or an accession number.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/ExternalResourceDescription"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Background">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">background</rdfs:label>
-    <rdfs:comment xml:lang="en">Builds a view over the related work and foundational theories in the field.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/orb/1.0/Discussion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">discussion</rdfs:label>
-    <rdfs:comment xml:lang="en">Interesting issues discovered while researching the publication's topic.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/BibliographicReference">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">bibliographic reference</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-bibliographic-reference .
-
-    :my-bibliographic-reference a deo:BibliographicReference .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/orb/1.0/References"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/Reference"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Model">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">model</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-model .
-
-    :my-model a deo:Model .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A description of a model used or produced by the work described in the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    <rdfs:label xml:lang="en">is part of</rdfs:label>
-    <vann:example>
-    :my-acknowledgements a deo:Acknowledgements ;
-        dcterms:isPartOf :my-paper .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/AuthorContribution">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">author contribution</rdfs:label>
-    <vann:example>
-    :my-paper 
-        dcterms:hasPart :my-author-contribution .
-
-    :my-author-contribution a deo:AuthorContribution .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A description of the roles played by an author in the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Methods">
+  <rdf:Description rdf:about="http://purl.org/orb/1.0/Methods">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">methods</rdfs:label>
+    <rdfs:comment xml:lang="en">A description of the methods used to carry out the study illustrated in the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/ProblemStatement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">problem statement</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-methods .
+        dcterms:hasPart :my-problem-statement .
 
-    :my-methods a deo:Methods .
+    :my-problem-statement a deo:ProblemStatement .
     </vann:example>
-    <rdfs:comment xml:lang="en">A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A concise description of the issues that needed to be addressed by a work described in the document.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Methods"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Prologue">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Scenario">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">prologue</rdfs:label>
+    <rdfs:label>scenario</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-prologue .
+        dcterms:hasPart :my-scenario .
 
-    :my-prologue a deo:Prologue .
+    :my-scenario a deo:Scenario .
     </vann:example>
-    <rdfs:comment xml:lang="en">A piece of writing at the beginning of a work of literature or drama, usually used to set the scene or to introduce the work.</rdfs:comment>
+    <rdfs:comment>A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Scenario"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Postscript">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">postscript</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-postscript .
+
+    :my-postscript a deo:Postscript .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Text added after the signature of a letter, or sometimes after the main body of an essay or book.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Evaluation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>evaluation</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-evaluation .
+
+    :my-evaluation a deo:Evaluation .
+    </vann:example>
+    <rdfs:comment>A consideration of the value, meaning and significance of the results obtained.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Evaluation"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
@@ -632,54 +410,121 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Materials">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Results">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">materials</rdfs:label>
+    <rdfs:label xml:lang="en">results</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-materials .
+        dcterms:hasPart :my-results .
 
-    :my-materials a deo:Materials .
+    :my-results a deo:Results .
     </vann:example>
-    <rdfs:comment xml:lang="en">A description in a research paper documenting the specialized materials used in the work described. This description is often combined with a description of the methods used, in a section entitled 'Methods and Materials', 'Experimental' or a related term.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Results"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Contribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>contribution</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-contribution .
+
+    :my-contribution a deo:Contribution .
+    </vann:example>
+    <rdfs:comment>A description of the part that this publication plays in the overall field.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Caption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">caption</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-caption .
+
+    :my-caption a deo:Caption .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Text accompanying another item, such as a picture.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Discussion">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Data">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">discussion</rdfs:label>
-    <rdfs:comment xml:lang="en">Interesting issues discovered while researching the publication's topic.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/orb/1.0/Conclusion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">conclusion</rdfs:label>
-    <rdfs:comment xml:lang="en">A reflection on and summarization of the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Contribution">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">contribution</rdfs:label>
-    <rdfs:comment xml:lang="en">The solution proposed by the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/deo/Evaluation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>evaluation</rdfs:label>
+    <rdfs:label xml:lang="en">data</rdfs:label>
     <vann:example>
     :my-paper 
-        dcterms:hasPart :my-evaluation .
+        dcterms:hasPart :my-data .
 
-    :my-evaluation a deo:Evaluation .
+    :my-data a deo:Data .
     </vann:example>
-    <rdfs:comment>A consideration of the value, meaning and significance of the results obtained.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A textual description of data used or produced in the work which the document describes, or the data themselves.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Evaluation"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/SupplementaryInformationDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">supplementary information description</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-supplementary-information-description .
+
+    :my-supplementary-information-description a deo:SupplementaryInformationDescription .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Information describing supplementary information relating to the document, including references or links to the relevant supplementary information.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/ExternalResourceDescription"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/ExternalResourceDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">external resource description</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-external-resource-description .
+
+    :my-external-resource-description a deo:ExternalResourceDescription ;
+        dcterms:hasPart :my-reference .
+
+    :my-reference a deo:Reference .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Information describing an external resource and including a reference to that resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b1"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">is part of</rdfs:label>
+    <vann:example>
+    :my-acknowledgements a deo:Acknowledgements ;
+        dcterms:isPartOf :my-paper .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Methods">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">methods</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-methods .
+
+    :my-methods a deo:Methods .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Methods"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/Epilogue">
@@ -696,6 +541,134 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Acknowledgements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">acknowledgements</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-acknowledgements .
+
+    :my-acknowledgements a deo:Acknowledgements .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/DatasetDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">dataset description</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-dataset-description .
+
+    :my-dataset-description a deo:DatasetDescription .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Information describing a dataset held in an external database or repository and including a reference to it, such as a database ID or an accession number.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/ExternalResourceDescription"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Dedication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">dedication</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-dedication .
+
+    :my-dedication a deo:Dedication .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Text in which the author names the person or people for whom he/she has written the document, or to whose memory it is dedicated.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/orb/1.0/Discussion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">discussion</rdfs:label>
+    <rdfs:comment xml:lang="en">Interesting issues discovered while researching the publication's topic.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/RelatedWork">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">related work</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-related-work .
+
+    :my-related-work a deo:RelatedWork .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Prologue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">prologue</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-prologue .
+
+    :my-prologue a deo:Prologue .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A piece of writing at the beginning of a work of literature or drama, usually used to set the scene or to introduce the work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Materials">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">materials</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-materials .
+
+    :my-materials a deo:Materials .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A description in a research paper documenting the specialized materials used in the work described. This description is often combined with a description of the methods used, in a section entitled 'Methods and Materials', 'Experimental' or a related term.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Background">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">background</rdfs:label>
+    <rdfs:comment xml:lang="en">Builds a view over the related work and foundational theories in the field.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/deo/BibliographicReference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">bibliographic reference</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-bibliographic-reference .
+
+    :my-bibliographic-reference a deo:BibliographicReference .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/orb/1.0/References"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/Reference"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Scenario">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">scenario</rdfs:label>
+    <rdfs:comment xml:lang="en">Real-world use cases in which the solution provided by the publication is applicable.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Conclusion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">conclusion</rdfs:label>
+    <rdfs:comment xml:lang="en">Conclusive overview of the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/deo/Discussion">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>discussion</rdfs:label>
@@ -711,13 +684,21 @@ What is the future work outlined in the conclusion of a document?
     <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Discussion"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/orb/1.0/Methods">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Reference">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">methods</rdfs:label>
-    <rdfs:comment xml:lang="en">A description of the methods used to carry out the study illustrated in the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
+    <rdfs:label xml:lang="en">reference</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-reference .
+
+    :my-reference a deo:Reference .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A reference to a specific part of the document, or to another publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/orb/1.0/Introduction">
@@ -726,60 +707,80 @@ What is the future work outlined in the conclusion of a document?
     <rdfs:comment xml:lang="en">An introduction explaining the general scope and purpose of the study illustrated in the publication.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4">
-    <rdf:first rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb3">
-    <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <rdf:rest rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Scenario">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/AuthorContribution">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">scenario</rdfs:label>
-    <rdfs:comment xml:lang="en">Real-world use cases in which the solution provided by the publication is applicable.</rdfs:comment>
+    <rdfs:label xml:lang="en">author contribution</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-author-contribution .
+
+    :my-author-contribution a deo:AuthorContribution .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A description of the roles played by an author in the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Motivation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">motivation</rdfs:label>
+    <rdfs:comment xml:lang="en">The reason motivating the research presented in the paper.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Evaluation">
+  <rdf:Description rdf:about="http://purl.org/spar/deo/Legend">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">evaluation</rdfs:label>
-    <rdfs:comment xml:lang="en">The evaluation methodology and its associated results.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+    <rdfs:label xml:lang="en">legend</rdfs:label>
+    <vann:example>
+    :my-paper 
+        dcterms:hasPart :my-legend .
+
+    :my-legend a deo:Legend .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Informative text that explicitly explains another item, such as a figure or a table.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/Caption"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:label xml:lang="en">has relation</rdfs:label>
-    <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/orb/1.0/Results">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">results</rdfs:label>
-    <rdfs:comment xml:lang="en">A description of the results obtained after carrying out the study illustrated in the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nd63331d1999b4651956e0cb1b7cadf7fb2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Contribution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">contribution</rdfs:label>
+    <rdfs:comment xml:lang="en">The solution proposed by the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/orb/1.0/References">
+  <rdf:Description rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">references</rdfs:label>
-    <rdfs:comment xml:lang="en">A list of references used as sources for the study illustrated in the publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:intersectionOf rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/orb/1.0/Conclusion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">conclusion</rdfs:label>
+    <rdfs:comment xml:lang="en">A reflection on and summarization of the publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/orb/1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b4">
+    <rdf:first rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b2"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b3">
+    <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdf:rest rdf:nodeID="n8e3300284db0452db8fab22ce35f50f6b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>
