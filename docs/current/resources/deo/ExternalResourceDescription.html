@@ -177,20 +177,20 @@ What is the future work outlined in the conclusion of a document?
     """ ;
         rdfs:comment "Information describing an external resource and including a reference to that resource."@en ;
         rdfs:isDefinedBy deo: ;
-        rdfs:subClassOf _:n8e3300284db0452db8fab22ce35f50f6b1 ;
+        rdfs:subClassOf _:n92262b6b5317448c8522821871e852e3b1 ;
         vs:term_status reg:statusStable .
 
-    _:n8e3300284db0452db8fab22ce35f50f6b1 a owl:Class ;
-        owl:intersectionOf _:n8e3300284db0452db8fab22ce35f50f6b3 .
+    _:n92262b6b5317448c8522821871e852e3b1 a owl:Class ;
+        owl:intersectionOf _:n92262b6b5317448c8522821871e852e3b3 .
 
-    _:n8e3300284db0452db8fab22ce35f50f6b2 a owl:Restriction ;
+    _:n92262b6b5317448c8522821871e852e3b2 a owl:Restriction ;
         owl:onProperty dcterms:hasPart ;
         owl:someValuesFrom deo:Reference .
 
-    _:n8e3300284db0452db8fab22ce35f50f6b3 rdf:first deo:DiscourseElement ;
-        rdf:rest _:n8e3300284db0452db8fab22ce35f50f6b4 .
+    _:n92262b6b5317448c8522821871e852e3b3 rdf:first deo:DiscourseElement ;
+        rdf:rest _:n92262b6b5317448c8522821871e852e3b4 .
 
-    _:n8e3300284db0452db8fab22ce35f50f6b4 rdf:first _:n8e3300284db0452db8fab22ce35f50f6b2 ;
+    _:n92262b6b5317448c8522821871e852e3b4 rdf:first _:n92262b6b5317448c8522821871e852e3b2 ;
         rdf:rest () .
 }
 
@@ -226,7 +226,7 @@ What is the future work outlined in the conclusion of a document?
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n8e3300284db0452db8fab22ce35f50f6b1"
+            "@id": "_:n92262b6b5317448c8522821871e852e3b1"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -236,7 +236,7 @@ What is the future work outlined in the conclusion of a document?
         ]
       },
       {
-        "@id": "_:n8e3300284db0452db8fab22ce35f50f6b1",
+        "@id": "_:n92262b6b5317448c8522821871e852e3b1",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -247,14 +247,14 @@ What is the future work outlined in the conclusion of a document?
                 "@id": "http://purl.org/spar/deo/DiscourseElement"
               },
               {
-                "@id": "_:n8e3300284db0452db8fab22ce35f50f6b2"
+                "@id": "_:n92262b6b5317448c8522821871e852e3b2"
               }
             ]
           }
         ]
       },
       {
-        "@id": "_:n8e3300284db0452db8fab22ce35f50f6b2",
+        "@id": "_:n92262b6b5317448c8522821871e852e3b2",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -272,22 +272,22 @@ What is the future work outlined in the conclusion of a document?
     ],
     "@id": "http://purl.org/spar/deo"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_d3f6ccb9cf7c8600303b14a5decc4d73_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Information describing an external resource and including a reference to that resource."@en &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n8e3300284db0452db8fab22ce35f50f6b4 &lt;http://purl.org/spar/deo> .
-&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#label> "external resource description"@en &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/deo/DiscourseElement> &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b1 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n8e3300284db0452db8fab22ce35f50f6b3 &lt;http://purl.org/spar/deo> .
+]</code></pre></div><div class="tab-pane fade" id=id_d3f6ccb9cf7c8600303b14a5decc4d73_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n92262b6b5317448c8522821871e852e3b1 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n92262b6b5317448c8522821871e852e3b3 &lt;http://purl.org/spar/deo> .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://purl.org/vocab/vann/example> "\n    :my-paper \n        dcterms:hasPart :my-external-resource-description .\n\n    :my-external-resource-description a deo:ExternalResourceDescription ;\n        dcterms:hasPart :my-reference .\n\n    :my-reference a deo:Reference .\n    " &lt;http://purl.org/spar/deo> .
-&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n8e3300284db0452db8fab22ce35f50f6b2 &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/deo> .
-&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b2 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/deo/Reference> &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/deo> .
 &lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/deo/> &lt;http://purl.org/spar/deo> .
-&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n8e3300284db0452db8fab22ce35f50f6b1 &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b2 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> &lt;http://purl.org/spar/deo> .
-_:n8e3300284db0452db8fab22ce35f50f6b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b2 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/deo> .
+&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/deo> .
+&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Information describing an external resource and including a reference to that resource."@en &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/deo/DiscourseElement> &lt;http://purl.org/spar/deo> .
+&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n92262b6b5317448c8522821871e852e3b1 &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/deo> .
+&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/2000/01/rdf-schema#label> "external resource description"@en &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b2 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/deo/Reference> &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n92262b6b5317448c8522821871e852e3b4 &lt;http://purl.org/spar/deo> .
+_:n92262b6b5317448c8522821871e852e3b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n92262b6b5317448c8522821871e852e3b2 &lt;http://purl.org/spar/deo> .
+&lt;http://purl.org/spar/deo/ExternalResourceDescription> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/deo> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../deo.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

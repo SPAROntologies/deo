@@ -7,6 +7,8 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/deo/Conclusion">
+    <rdfs:label>conclusion</rdfs:label>
+    <rdfs:comment>A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-paper 
@@ -14,9 +16,7 @@
 
     :my-conclusion a deo:Conclusion .
     </vann:example>
-    <rdfs:label>conclusion</rdfs:label>
     <owl:equivalentClass rdf:resource="http://purl.org/orb/1.0/Conclusion"/>
-    <rdfs:comment>A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
