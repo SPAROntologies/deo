@@ -1,0 +1,9 @@
+@prefix orb: <http://purl.org/orb/1.0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+orb:Methods a owl:Class ;
+    rdfs:label "methods"@en ;
+    rdfs:comment "A description of the methods used to carry out the study illustrated in the publication."@en ;
+    rdfs:isDefinedBy orb: .
+

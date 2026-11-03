@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix orb: <http://purl.org/orb/1.0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:Methods a owl:Class ;
+    rdfs:label "methods"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-methods .
+
+    :my-methods a deo:Methods .
+    """ ;
+    rdfs:comment "A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    owl:equivalentClass orb:Methods ;
+    vs:term_status reg:statusStable .
+

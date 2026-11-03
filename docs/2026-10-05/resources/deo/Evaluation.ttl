@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:Evaluation a owl:Class ;
+    rdfs:label "evaluation" ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-evaluation .
+
+    :my-evaluation a deo:Evaluation .
+    """ ;
+    rdfs:comment "A consideration of the value, meaning and significance of the results obtained." ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    owl:equivalentClass sro:Evaluation ;
+    vs:term_status reg:statusStable .
+

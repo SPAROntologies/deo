@@ -1,0 +1,22 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+dcterms:hasPart a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has part"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-acknowledgements .
+
+    :my-acknowledgements a deo:Acknowledgements .
+    """ ;
+    rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf dcterms:relation ;
+    owl:inverseOf dcterms:isPartOf ;
+    vs:term_status reg:statusStable .
+
