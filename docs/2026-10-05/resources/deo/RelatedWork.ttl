@@ -1,0 +1,20 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:RelatedWork a owl:Class ;
+    rdfs:label "related work"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-related-work .
+
+    :my-related-work a deo:RelatedWork .
+    """ ;
+    rdfs:comment "The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+

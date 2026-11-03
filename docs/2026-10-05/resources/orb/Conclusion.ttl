@@ -1,0 +1,9 @@
+@prefix orb: <http://purl.org/orb/1.0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+orb:Conclusion a owl:Class ;
+    rdfs:label "conclusion"@en ;
+    rdfs:comment "A reflection on and summarization of the publication."@en ;
+    rdfs:isDefinedBy orb: .
+

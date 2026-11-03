@@ -1,0 +1,20 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:DatasetDescription a owl:Class ;
+    rdfs:label "dataset description"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-dataset-description .
+
+    :my-dataset-description a deo:DatasetDescription .
+    """ ;
+    rdfs:comment "Information describing a dataset held in an external database or repository and including a reference to it, such as a database ID or an accession number."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:ExternalResourceDescription ;
+    vs:term_status reg:statusStable .
+
