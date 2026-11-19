@@ -14,7 +14,7 @@ deo:Reference a owl:Class ;
     :my-reference a deo:Reference .
     """ ;
     rdfs:comment "A reference to a specific part of the document, or to another publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

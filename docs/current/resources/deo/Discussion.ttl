@@ -15,7 +15,7 @@ deo:Discussion a owl:Class ;
     :my-discussion a deo:Discussion .
     """ ;
     rdfs:comment "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Discussion ;
     vs:term_status reg:statusStable .

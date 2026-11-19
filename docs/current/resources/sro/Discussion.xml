@@ -6,7 +6,7 @@
   <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Discussion">
     <rdfs:comment xml:lang="en">Interesting issues discovered while researching the publication's topic.</rdfs:comment>
     <rdfs:label xml:lang="en">discussion</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
   </rdf:Description>
 </rdf:RDF>

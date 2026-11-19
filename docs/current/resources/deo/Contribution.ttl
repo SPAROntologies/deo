@@ -15,7 +15,7 @@ deo:Contribution a owl:Class ;
     :my-contribution a deo:Contribution .
     """ ;
     rdfs:comment "A description of the part that this publication plays in the overall field." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Contribution ;
     vs:term_status reg:statusStable .

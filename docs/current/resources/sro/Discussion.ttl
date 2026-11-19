@@ -5,5 +5,5 @@
 sro:Discussion a owl:Class ;
     rdfs:label "discussion"@en ;
     rdfs:comment "Interesting issues discovered while researching the publication's topic."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 

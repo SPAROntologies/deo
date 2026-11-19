@@ -15,7 +15,7 @@ deo:Motivation a owl:Class ;
     :my-motivation a deo:Motivation .
     """ ;
     rdfs:comment "A description of the justification for undertaking the work described in the publication." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Motivation ;
     vs:term_status reg:statusStable .

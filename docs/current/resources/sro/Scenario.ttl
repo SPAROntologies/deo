@@ -5,5 +5,5 @@
 sro:Scenario a owl:Class ;
     rdfs:label "scenario"@en ;
     rdfs:comment "Real-world use cases in which the solution provided by the publication is applicable."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 

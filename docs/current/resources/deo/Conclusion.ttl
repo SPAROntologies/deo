@@ -15,7 +15,7 @@ deo:Conclusion a owl:Class ;
     :my-conclusion a deo:Conclusion .
     """ ;
     rdfs:comment "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Conclusion ;
     vs:term_status reg:statusStable .

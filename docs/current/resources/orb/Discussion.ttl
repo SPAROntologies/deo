@@ -5,5 +5,5 @@
 orb:Discussion a owl:Class ;
     rdfs:label "discussion"@en ;
     rdfs:comment "Interesting issues discovered while researching the publication's topic."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 

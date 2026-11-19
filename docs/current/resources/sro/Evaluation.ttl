@@ -5,5 +5,5 @@
 sro:Evaluation a owl:Class ;
     rdfs:label "evaluation"@en ;
     rdfs:comment "The evaluation methodology and its associated results."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 

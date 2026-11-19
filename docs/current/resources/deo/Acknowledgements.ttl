@@ -14,7 +14,7 @@ deo:Acknowledgements a owl:Class ;
     :my-acknowledgements a deo:Acknowledgements .
     """ ;
     rdfs:comment "Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

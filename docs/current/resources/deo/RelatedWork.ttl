@@ -14,7 +14,7 @@ deo:RelatedWork a owl:Class ;
     :my-related-work a deo:RelatedWork .
     """ ;
     rdfs:comment "The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

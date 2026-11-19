@@ -12,7 +12,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/orb/1.0/"
+        "@id": "http://purl.org/orb/1.0"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

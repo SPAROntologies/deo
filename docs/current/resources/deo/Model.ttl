@@ -14,7 +14,7 @@ deo:Model a owl:Class ;
     :my-model a deo:Model .
     """ ;
     rdfs:comment "A description of a model used or produced by the work described in the publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

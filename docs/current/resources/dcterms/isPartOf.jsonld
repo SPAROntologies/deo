@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/dc/terms/isPartOf",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -18,7 +18,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/dc/terms/"
+        "@id": "http://purl.org/dc/terms"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

@@ -14,7 +14,7 @@ deo:DatasetDescription a owl:Class ;
     :my-dataset-description a deo:DatasetDescription .
     """ ;
     rdfs:comment "Information describing a dataset held in an external database or repository and including a reference to it, such as a database ID or an accession number."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:ExternalResourceDescription ;
     vs:term_status reg:statusStable .
 

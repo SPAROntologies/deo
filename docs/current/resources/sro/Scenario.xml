@@ -5,7 +5,7 @@
 >
   <rdf:Description rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Scenario">
     <rdfs:label xml:lang="en">scenario</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#"/>
+    <rdfs:isDefinedBy rdf:resource="http://salt.semanticauthoring.org/ontologies/sro"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Real-world use cases in which the solution provided by the publication is applicable.</rdfs:comment>
   </rdf:Description>

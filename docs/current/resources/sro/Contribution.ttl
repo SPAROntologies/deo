@@ -5,5 +5,5 @@
 sro:Contribution a owl:Class ;
     rdfs:label "contribution"@en ;
     rdfs:comment "The solution proposed by the publication."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 

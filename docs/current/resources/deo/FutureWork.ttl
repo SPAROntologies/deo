@@ -14,7 +14,7 @@ deo:FutureWork a owl:Class ;
     :my-future-work a deo:FutureWork .
     """ ;
     rdfs:comment "A proposal for new investigation to be undertaken in order to continue and advance the work described in the publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

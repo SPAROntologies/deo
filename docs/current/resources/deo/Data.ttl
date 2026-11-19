@@ -14,7 +14,7 @@ deo:Data a owl:Class ;
     :my-data a deo:Data .
     """ ;
     rdfs:comment "A textual description of data used or produced in the work which the document describes, or the data themselves."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

@@ -14,7 +14,7 @@ deo:Dedication a owl:Class ;
     :my-dedication a deo:Dedication .
     """ ;
     rdfs:comment "Text in which the author names the person or people for whom he/she has written the document, or to whose memory it is dedicated."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

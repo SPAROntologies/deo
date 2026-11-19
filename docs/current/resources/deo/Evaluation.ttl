@@ -15,7 +15,7 @@ deo:Evaluation a owl:Class ;
     :my-evaluation a deo:Evaluation .
     """ ;
     rdfs:comment "A consideration of the value, meaning and significance of the results obtained." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Evaluation ;
     vs:term_status reg:statusStable .

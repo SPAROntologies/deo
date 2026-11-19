@@ -5,5 +5,5 @@
 orb:Introduction a owl:Class ;
     rdfs:label "introduction"@en ;
     rdfs:comment "An introduction explaining the general scope and purpose of the study illustrated in the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 

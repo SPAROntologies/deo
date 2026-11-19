@@ -5,5 +5,5 @@
 orb:Results a owl:Class ;
     rdfs:label "results"@en ;
     rdfs:comment "A description of the results obtained after carrying out the study illustrated in the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 

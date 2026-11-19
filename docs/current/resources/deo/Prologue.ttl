@@ -14,7 +14,7 @@ deo:Prologue a owl:Class ;
     :my-prologue a deo:Prologue .
     """ ;
     rdfs:comment "A piece of writing at the beginning of a work of literature or drama, usually used to set the scene or to introduce the work."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

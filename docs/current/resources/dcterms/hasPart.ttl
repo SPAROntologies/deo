@@ -15,7 +15,7 @@ dcterms:hasPart a owl:ObjectProperty,
     :my-acknowledgements a deo:Acknowledgements .
     """ ;
     rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
-    rdfs:isDefinedBy dcterms: ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms> ;
     rdfs:subPropertyOf dcterms:relation ;
     owl:inverseOf dcterms:isPartOf ;
     vs:term_status reg:statusStable .

@@ -7,7 +7,11 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/deo/Evaluation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>evaluation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:comment>A consideration of the value, meaning and significance of the results obtained.</rdfs:comment>
     <vann:example>
     :my-paper 
@@ -15,10 +19,6 @@
 
     :my-evaluation a deo:Evaluation .
     </vann:example>
-    <rdfs:label>evaluation</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
     <owl:equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Evaluation"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
   </rdf:Description>
 </rdf:RDF>
