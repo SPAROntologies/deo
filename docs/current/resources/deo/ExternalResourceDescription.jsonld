@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/deo/"
+        "@id": "http://purl.org/spar/deo"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n92262b6b5317448c8522821871e852e3b1"
+        "@id": "_:nebba051472a94d86a1b868a454c1be94b1"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "@id": "_:n92262b6b5317448c8522821871e852e3b1",
+    "@id": "_:nebba051472a94d86a1b868a454c1be94b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -49,14 +49,14 @@
             "@id": "http://purl.org/spar/deo/DiscourseElement"
           },
           {
-            "@id": "_:n92262b6b5317448c8522821871e852e3b2"
+            "@id": "_:nebba051472a94d86a1b868a454c1be94b2"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n92262b6b5317448c8522821871e852e3b2",
+    "@id": "_:nebba051472a94d86a1b868a454c1be94b2",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

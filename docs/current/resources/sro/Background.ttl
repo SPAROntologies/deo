@@ -5,5 +5,5 @@
 sro:Background a owl:Class ;
     rdfs:label "background"@en ;
     rdfs:comment "Builds a view over the related work and foundational theories in the field."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 

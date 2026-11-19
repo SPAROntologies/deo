@@ -19,7 +19,7 @@ deo:ExternalResourceDescription a owl:Class ;
     :my-reference a deo:Reference .
     """ ;
     rdfs:comment "Information describing an external resource and including a reference to that resource."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( deo:DiscourseElement [ a owl:Restriction ;
                         owl:onProperty dcterms:hasPart ;

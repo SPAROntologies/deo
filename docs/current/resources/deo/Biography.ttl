@@ -14,7 +14,7 @@ deo:Biography a owl:Class ;
     :my-biography a deo:Biography .
     """ ;
     rdfs:comment "Information describing a person and his or her life history and contributions."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

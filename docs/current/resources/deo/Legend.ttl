@@ -14,7 +14,7 @@ deo:Legend a owl:Class ;
     :my-legend a deo:Legend .
     """ ;
     rdfs:comment "Informative text that explicitly explains another item, such as a figure or a table."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:Caption ;
     vs:term_status reg:statusStable .
 

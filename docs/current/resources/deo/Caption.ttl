@@ -14,7 +14,7 @@ deo:Caption a owl:Class ;
     :my-caption a deo:Caption .
     """ ;
     rdfs:comment "Text accompanying another item, such as a picture."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

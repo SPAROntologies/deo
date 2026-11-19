@@ -15,7 +15,7 @@ deo:Scenario a owl:Class ;
     :my-scenario a deo:Scenario .
     """ ;
     rdfs:comment "A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Scenario ;
     vs:term_status reg:statusStable .

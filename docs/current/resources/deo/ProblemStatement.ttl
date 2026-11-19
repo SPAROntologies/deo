@@ -14,7 +14,7 @@ deo:ProblemStatement a owl:Class ;
     :my-problem-statement a deo:ProblemStatement .
     """ ;
     rdfs:comment "A concise description of the issues that needed to be addressed by a work described in the document."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 

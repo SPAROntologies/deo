@@ -6,5 +6,5 @@ dcterms:relation a owl:ObjectProperty,
         owl:SymmetricProperty ;
     rdfs:label "has relation"@en ;
     rdfs:comment "A related resource."@en ;
-    rdfs:isDefinedBy dcterms: .
+    rdfs:isDefinedBy <http://purl.org/dc/terms> .
 

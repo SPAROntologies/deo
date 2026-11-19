@@ -1,6 +1,6 @@
 [project]
 name = "deo"
-version = "1.2.1"
+version = "1.2.2"
 description = "The Discourse Elements Ontology (DEO) is an ontology that provides a structured vocabulary for rhetorical elements within documents, such as Introduction, Discussion, and Acknowledgements."
 readme = "README.md"
 requires-python = ">=3.13"

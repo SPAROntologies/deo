@@ -15,7 +15,7 @@ deo:Methods a owl:Class ;
     :my-methods a deo:Methods .
     """ ;
     rdfs:comment "A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Methods ;
     vs:term_status reg:statusStable .

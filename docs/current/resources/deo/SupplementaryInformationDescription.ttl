@@ -14,7 +14,7 @@ deo:SupplementaryInformationDescription a owl:Class ;
     :my-supplementary-information-description a deo:SupplementaryInformationDescription .
     """ ;
     rdfs:comment "Information describing supplementary information relating to the document, including references or links to the relevant supplementary information."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:ExternalResourceDescription ;
     vs:term_status reg:statusStable .
 

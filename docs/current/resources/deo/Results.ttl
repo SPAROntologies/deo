@@ -15,7 +15,7 @@ deo:Results a owl:Class ;
     :my-results a deo:Results .
     """ ;
     rdfs:comment "The report of the specific findings of an investigation, given without discussion or conclusion being drawn."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Results ;
     vs:term_status reg:statusStable .

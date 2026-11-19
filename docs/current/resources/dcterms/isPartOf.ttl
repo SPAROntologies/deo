@@ -13,7 +13,7 @@ dcterms:isPartOf a owl:ObjectProperty,
         dcterms:isPartOf :my-paper .
     """ ;
     rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
-    rdfs:isDefinedBy dcterms: ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms> ;
     rdfs:subPropertyOf dcterms:relation ;
     vs:term_status reg:statusStable .
 

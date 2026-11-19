@@ -5,5 +5,5 @@
 orb:Conclusion a owl:Class ;
     rdfs:label "conclusion"@en ;
     rdfs:comment "A reflection on and summarization of the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
