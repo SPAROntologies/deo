@@ -1,0 +1,4 @@
+<http://salt.semanticauthoring.org/ontologies/sro#Evaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "The evaluation methodology and its associated results."@en .
+<http://salt.semanticauthoring.org/ontologies/sro#Evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://salt.semanticauthoring.org/ontologies/sro#Evaluation> <http://www.w3.org/2000/01/rdf-schema#label> "evaluation"@en .
+<http://salt.semanticauthoring.org/ontologies/sro#Evaluation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://salt.semanticauthoring.org/ontologies/sro#> .

@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:ExternalResourceDescription a owl:Class ;
+    rdfs:label "external resource description"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-external-resource-description .
+
+    :my-external-resource-description a deo:ExternalResourceDescription ;
+        dcterms:hasPart :my-reference .
+
+    :my-reference a deo:Reference .
+    """ ;
+    rdfs:comment "Information describing an external resource and including a reference to that resource."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement [ a owl:Restriction ;
+                        owl:onProperty dcterms:hasPart ;
+                        owl:someValuesFrom deo:Reference ] ) ] ;
+    vs:term_status reg:statusStable .
+

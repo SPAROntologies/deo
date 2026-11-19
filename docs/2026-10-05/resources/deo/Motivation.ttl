@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:Motivation a owl:Class ;
+    rdfs:label "motivation" ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-motivation .
+
+    :my-motivation a deo:Motivation .
+    """ ;
+    rdfs:comment "A description of the justification for undertaking the work described in the publication." ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    owl:equivalentClass sro:Motivation ;
+    vs:term_status reg:statusStable .
+

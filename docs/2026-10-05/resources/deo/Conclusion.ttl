@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix orb: <http://purl.org/orb/1.0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:Conclusion a owl:Class ;
+    rdfs:label "conclusion" ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-conclusion .
+
+    :my-conclusion a deo:Conclusion .
+    """ ;
+    rdfs:comment "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section." ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf deo:DiscourseElement ;
+    owl:equivalentClass orb:Conclusion ;
+    vs:term_status reg:statusStable .
+

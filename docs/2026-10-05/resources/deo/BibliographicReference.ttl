@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix orb: <http://purl.org/orb/1.0/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+deo:BibliographicReference a owl:Class ;
+    rdfs:label "bibliographic reference"@en ;
+    vann:example """
+    :my-paper 
+        dcterms:hasPart :my-bibliographic-reference .
+
+    :my-bibliographic-reference a deo:BibliographicReference .
+    """ ;
+    rdfs:comment "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."@en ;
+    rdfs:isDefinedBy deo: ;
+    rdfs:subClassOf orb:References,
+        deo:Reference ;
+    vs:term_status reg:statusStable .
+
