@@ -24,12 +24,54 @@ dc:rights a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
+dc:contributor a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:image a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
 <http://purl.org/spar/deo> a owl:Ontology ;
     rdfs:label "Discourse Elements Ontology (DEO)"@en ;
     dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)"^^xsd:string,
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-10-05" ;
+    dc:date "2026-11-19" ;
     dc:description """
 The **_Discourse Elements Ontology (DEO)_** is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements), enabling these to be described in RDF.
 The main class of this ontology is `deo:DiscourseElement`, which describes all those elements of a document that carry out a rhetorical function. 
@@ -169,7 +211,7 @@ What is the future work outlined in the conclusion of a document?
     dcterms:created "2011-05-05" ;
     dcterms:issued "2015-07-03" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-19" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/deo/blob/master/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.39fd58" ;
@@ -178,10 +220,10 @@ What is the future work outlined in the conclusion of a document?
     vann:preferredNamespacePrefix "deo"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/deo"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/deo> ;
-    owl:backwardCompatibleWith deo:2026-08-14 ;
-    owl:priorVersion deo:2026-08-14 ;
-    owl:versionIRI deo:2026-10-05 ;
-    owl:versionInfo "1.2.1"^^xsd:string ;
+    owl:backwardCompatibleWith deo:2026-10-05 ;
+    owl:priorVersion deo:2026-10-05 ;
+    owl:versionIRI deo:2026-11-19 ;
+    owl:versionInfo "1.2.2"^^xsd:string ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/deo> ;
     schema:image <https://github.com/SPAROntologies/deo/blob/master/docs/current/deo.png> ;
@@ -189,10 +231,10 @@ What is the future work outlined in the conclusion of a document?
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
+        "OWL ontology"@en ,
         "bibliometrics"@en,
         "rethorical elements"@en,
-        "scholarly publishing"@en,
+        "scholarly communication"@en,
         "scientometrics"@en,
         "semantic publishing"@en .
 
@@ -205,7 +247,7 @@ deo:Acknowledgements a owl:Class ;
     :my-acknowledgements a deo:Acknowledgements .
     """ ;
     rdfs:comment "Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -218,7 +260,7 @@ deo:AuthorContribution a owl:Class ;
     :my-author-contribution a deo:AuthorContribution .
     """ ;
     rdfs:comment "A description of the roles played by an author in the publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -231,7 +273,7 @@ deo:Background a owl:Class ;
     :my-background a deo:Background .
     """ ;
     rdfs:comment "Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Background ;
     vs:term_status reg:statusStable .
@@ -245,7 +287,7 @@ deo:BibliographicReference a owl:Class ;
     :my-bibliographic-reference a deo:BibliographicReference .
     """ ;
     rdfs:comment "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf orb:References,
         deo:Reference ;
     vs:term_status reg:statusStable .
@@ -259,7 +301,7 @@ deo:Biography a owl:Class ;
     :my-biography a deo:Biography .
     """ ;
     rdfs:comment "Information describing a person and his or her life history and contributions."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -272,7 +314,7 @@ deo:Conclusion a owl:Class ;
     :my-conclusion a deo:Conclusion .
     """ ;
     rdfs:comment "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Conclusion ;
     vs:term_status reg:statusStable .
@@ -286,7 +328,7 @@ deo:Contribution a owl:Class ;
     :my-contribution a deo:Contribution .
     """ ;
     rdfs:comment "A description of the part that this publication plays in the overall field." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Contribution ;
     vs:term_status reg:statusStable .
@@ -300,7 +342,7 @@ deo:Data a owl:Class ;
     :my-data a deo:Data .
     """ ;
     rdfs:comment "A textual description of data used or produced in the work which the document describes, or the data themselves."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -313,7 +355,7 @@ deo:DatasetDescription a owl:Class ;
     :my-dataset-description a deo:DatasetDescription .
     """ ;
     rdfs:comment "Information describing a dataset held in an external database or repository and including a reference to it, such as a database ID or an accession number."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:ExternalResourceDescription ;
     vs:term_status reg:statusStable .
 
@@ -326,7 +368,7 @@ deo:Dedication a owl:Class ;
     :my-dedication a deo:Dedication .
     """ ;
     rdfs:comment "Text in which the author names the person or people for whom he/she has written the document, or to whose memory it is dedicated."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -339,7 +381,7 @@ deo:Discussion a owl:Class ;
     :my-discussion a deo:Discussion .
     """ ;
     rdfs:comment "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Discussion ;
     vs:term_status reg:statusStable .
@@ -353,7 +395,7 @@ deo:Epilogue a owl:Class ;
     :my-epilogue a deo:Epilogue .
     """ ;
     rdfs:comment "A piece of writing at the end of a work of literature or drama, usually used to bring closure to the work."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -366,7 +408,7 @@ deo:Evaluation a owl:Class ;
     :my-evaluation a deo:Evaluation .
     """ ;
     rdfs:comment "A consideration of the value, meaning and significance of the results obtained." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Evaluation ;
     vs:term_status reg:statusStable .
@@ -380,7 +422,7 @@ deo:FutureWork a owl:Class ;
     :my-future-work a deo:FutureWork .
     """ ;
     rdfs:comment "A proposal for new investigation to be undertaken in order to continue and advance the work described in the publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -393,7 +435,7 @@ deo:Introduction a owl:Class ;
     :my-introduction a deo:Introduction .
     """ ;
     rdfs:comment "An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Introduction ;
     vs:term_status reg:statusStable .
@@ -407,7 +449,7 @@ deo:Legend a owl:Class ;
     :my-legend a deo:Legend .
     """ ;
     rdfs:comment "Informative text that explicitly explains another item, such as a figure or a table."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:Caption ;
     vs:term_status reg:statusStable .
 
@@ -420,7 +462,7 @@ deo:Materials a owl:Class ;
     :my-materials a deo:Materials .
     """ ;
     rdfs:comment "A description in a research paper documenting the specialized materials used in the work described. This description is often combined with a description of the methods used, in a section entitled 'Methods and Materials', 'Experimental' or a related term."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -433,7 +475,7 @@ deo:Methods a owl:Class ;
     :my-methods a deo:Methods .
     """ ;
     rdfs:comment "A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Methods ;
     vs:term_status reg:statusStable .
@@ -447,7 +489,7 @@ deo:Model a owl:Class ;
     :my-model a deo:Model .
     """ ;
     rdfs:comment "A description of a model used or produced by the work described in the publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -460,7 +502,7 @@ deo:Motivation a owl:Class ;
     :my-motivation a deo:Motivation .
     """ ;
     rdfs:comment "A description of the justification for undertaking the work described in the publication." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Motivation ;
     vs:term_status reg:statusStable .
@@ -474,7 +516,7 @@ deo:Postscript a owl:Class ;
     :my-postscript a deo:Postscript .
     """ ;
     rdfs:comment "Text added after the signature of a letter, or sometimes after the main body of an essay or book."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -487,7 +529,7 @@ deo:ProblemStatement a owl:Class ;
     :my-problem-statement a deo:ProblemStatement .
     """ ;
     rdfs:comment "A concise description of the issues that needed to be addressed by a work described in the document."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -500,7 +542,7 @@ deo:Prologue a owl:Class ;
     :my-prologue a deo:Prologue .
     """ ;
     rdfs:comment "A piece of writing at the beginning of a work of literature or drama, usually used to set the scene or to introduce the work."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -513,7 +555,7 @@ deo:RelatedWork a owl:Class ;
     :my-related-work a deo:RelatedWork .
     """ ;
     rdfs:comment "The authors' critical review of current knowledge by specific reference to others' work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -526,7 +568,7 @@ deo:Results a owl:Class ;
     :my-results a deo:Results .
     """ ;
     rdfs:comment "The report of the specific findings of an investigation, given without discussion or conclusion being drawn."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass orb:Results ;
     vs:term_status reg:statusStable .
@@ -540,7 +582,7 @@ deo:Scenario a owl:Class ;
     :my-scenario a deo:Scenario .
     """ ;
     rdfs:comment "A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system." ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     owl:equivalentClass sro:Scenario ;
     vs:term_status reg:statusStable .
@@ -554,19 +596,19 @@ deo:SupplementaryInformationDescription a owl:Class ;
     :my-supplementary-information-description a deo:SupplementaryInformationDescription .
     """ ;
     rdfs:comment "Information describing supplementary information relating to the document, including references or links to the relevant supplementary information."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:ExternalResourceDescription ;
     vs:term_status reg:statusStable .
 
 sro:Conclusion a owl:Class ;
     rdfs:label "conclusion"@en ;
     rdfs:comment "Conclusive overview of the publication."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 sro:Discussion a owl:Class ;
     rdfs:label "discussion"@en ;
     rdfs:comment "Interesting issues discovered while researching the publication's topic."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 rdfs:comment a owl:AnnotationProperty .
 
@@ -582,7 +624,7 @@ dcterms:hasPart a owl:ObjectProperty,
     :my-acknowledgements a deo:Acknowledgements .
     """ ;
     rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
-    rdfs:isDefinedBy dcterms: ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms> ;
     rdfs:subPropertyOf dcterms:relation ;
     owl:inverseOf dcterms:isPartOf ;
     vs:term_status reg:statusStable .
@@ -595,39 +637,39 @@ dcterms:isPartOf a owl:ObjectProperty,
         dcterms:isPartOf :my-paper .
     """ ;
     rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
-    rdfs:isDefinedBy dcterms: ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms> ;
     rdfs:subPropertyOf dcterms:relation ;
     vs:term_status reg:statusStable .
 
 orb:Conclusion a owl:Class ;
     rdfs:label "conclusion"@en ;
     rdfs:comment "A reflection on and summarization of the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
 orb:Discussion a owl:Class ;
     rdfs:label "discussion"@en ;
     rdfs:comment "Interesting issues discovered while researching the publication's topic."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
 orb:Introduction a owl:Class ;
     rdfs:label "introduction"@en ;
     rdfs:comment "An introduction explaining the general scope and purpose of the study illustrated in the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
 orb:Methods a owl:Class ;
     rdfs:label "methods"@en ;
     rdfs:comment "A description of the methods used to carry out the study illustrated in the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
 orb:References a owl:Class ;
     rdfs:label "references"@en ;
     rdfs:comment "A list of references used as sources for the study illustrated in the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
 orb:Results a owl:Class ;
     rdfs:label "results"@en ;
     rdfs:comment "A description of the results obtained after carrying out the study illustrated in the publication."@en ;
-    rdfs:isDefinedBy orb: .
+    rdfs:isDefinedBy <http://purl.org/orb/1.0> .
 
 deo:Caption a owl:Class ;
     rdfs:label "caption"@en ;
@@ -638,40 +680,40 @@ deo:Caption a owl:Class ;
     :my-caption a deo:Caption .
     """ ;
     rdfs:comment "Text accompanying another item, such as a picture."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
 sro:Background a owl:Class ;
     rdfs:label "background"@en ;
     rdfs:comment "Builds a view over the related work and foundational theories in the field."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 sro:Contribution a owl:Class ;
     rdfs:label "contribution"@en ;
     rdfs:comment "The solution proposed by the publication."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 sro:Evaluation a owl:Class ;
     rdfs:label "evaluation"@en ;
     rdfs:comment "The evaluation methodology and its associated results."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 sro:Motivation a owl:Class ;
     rdfs:label "motivation"@en ;
     rdfs:comment "The reason motivating the research presented in the paper."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 sro:Scenario a owl:Class ;
     rdfs:label "scenario"@en ;
     rdfs:comment "Real-world use cases in which the solution provided by the publication is applicable."@en ;
-    rdfs:isDefinedBy sro: .
+    rdfs:isDefinedBy <http://salt.semanticauthoring.org/ontologies/sro> .
 
 dcterms:relation a owl:ObjectProperty,
         owl:SymmetricProperty ;
     rdfs:label "has relation"@en ;
     rdfs:comment "A related resource."@en ;
-    rdfs:isDefinedBy dcterms: .
+    rdfs:isDefinedBy <http://purl.org/dc/terms> .
 
 deo:ExternalResourceDescription a owl:Class ;
     rdfs:label "external resource description"@en ;
@@ -685,7 +727,7 @@ deo:ExternalResourceDescription a owl:Class ;
     :my-reference a deo:Reference .
     """ ;
     rdfs:comment "Information describing an external resource and including a reference to that resource."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( deo:DiscourseElement [ a owl:Restriction ;
                         owl:onProperty dcterms:hasPart ;
@@ -701,7 +743,7 @@ deo:Reference a owl:Class ;
     :my-reference a deo:Reference .
     """ ;
     rdfs:comment "A reference to a specific part of the document, or to another publication."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf deo:DiscourseElement ;
     vs:term_status reg:statusStable .
 
@@ -714,7 +756,7 @@ deo:DiscourseElement a owl:Class ;
     :my-discourse-element a deo:DiscourseElement .
     """ ;
     rdfs:comment "An element of a document that carries out a rhetorical function."@en ;
-    rdfs:isDefinedBy deo: ;
+    rdfs:isDefinedBy <http://purl.org/spar/deo> ;
     rdfs:subClassOf owl:Thing ;
     vs:term_status reg:statusStable .
 
